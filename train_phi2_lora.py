@@ -7,9 +7,7 @@ import torch
 # Load tokenizer & 8-bit model
 model_name = "microsoft/phi-2"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
-model = AutoModelForCausalLM.from_pretrained(
-    model_name, load_in_8bit=True, device_map="auto"
-)
+model = AutoModelForCasualLM.from_pretrained(model_name, device_map="auto")
 
 # Prepare for LoRA
 model = prepare_model_for_kbit_training(model)
