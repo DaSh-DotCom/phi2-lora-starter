@@ -1,3 +1,4 @@
+phi2-lora-starter
 # Phi‑2 LoRA Starter (WSL2 / RTX 3060)
 
 ## 🚀 Setup
