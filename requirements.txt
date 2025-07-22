@@ -4,3 +4,7 @@ datasets
 peft
 accelerate
 bitsandbytes
+numpy
+scipy
+pandas
+matplotlib
