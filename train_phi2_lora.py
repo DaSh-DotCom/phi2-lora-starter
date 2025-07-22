@@ -7,6 +7,7 @@ model_name = "microsoft/phi-2"
 
 # Load tokenizer and model in 8-bit with GPU support
 tokenizer = AutoTokenizer.from_pretrained(model_name)
+tokenizer.pad_token = tokenizer.eos_token
 model = AutoModelForCausalLM.from_pretrained(
     model_name,
     load_in_8bit=True,
